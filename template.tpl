@@ -13,7 +13,7 @@ ___INFO___
   "id": "cvt_temp_public_id",
   "version": 1,
   "securityGroups": [],
-  "displayName": "Equateur Analytics",
+  "displayName": "Equateur Analytics Tag",
   "categories": [
     "ANALYTICS",
     "CONVERSIONS"
@@ -23,7 +23,7 @@ ___INFO___
     "displayName": "Equateur Analytics",
     "thumbnail": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAeFBMVEUAAAAPJ0cPKEgUNlkVOVwQKkslZpM1lMo2mc8ocJ4SMFIgWoQ6o9s8qeMma5gyjMA7p+A2mdAWPGAaRmwfVX4ob50tgLEPJ0greKccS3MiX4oYQWYwh7ofV4AjYYwtfq44ntYrd6cmapc5oNcSL1Exi740kscbSW/mO2uKAAAAAXRSTlMAQObYZgAAAyBJREFUaN7VmmGfoiAQxjMlN2WKyry13My27r7/NzwtTTRhZir2d8e7ZeH5gw8SMziZPBTvhTJByyvqBMbr8lbEe+SNiPfJjyPeq/9IeLf+kPB+/T7Bhb5OcKOvEVwDXOnfCe4Anmv9nwGwOkz9QHAJnOZiFn7MI4eAWALAYsoCcPSjJSgFqzVrCpzGG6mqIhNngLjWV7BwBtjCFZByFhIHINIbYMlZRxzA1ePa5cARIFhdAUpuHAFui+i6jH45ASQNAGaOZjCDBvBJn4AJILJdvB+uxs8WkA/+M11/HRLD0hoH+IUEdSz7q0XkLSDsi0WLlQKZr+kAUdZSAMseIQpbwLGnFaVwbZ5HZMD+eJOCVO+zbmqrZZQ9jGZYawd8qbaU2tPOZFsLO+35z9pqOJEBcTtUJRcdYXevhW2nv5Nt9fgmOAroxqoTth3gvt2Jg4SxeSGAIISOUDRON1tdb7uLtlJruSEDpmXXrVJLruNttjptuxNZrrR2uSAD9GdU9ZRp4ov7VtcMVkRZ8a2NQ6nYowPOl15XkGE6LzWoLBbFbwl6IwgDBsA79AD1Swdg+7uqKT0OYL0a9EeL/MMC9GymFIPF5u26ZzOlxB4PMLAZnUAYMAEPNiOA0uMCeDabLLYAWDYbLbb9JhNtllaLbQCGzWaLracKus1mi60Ass3SbLEVQLbZYrH94EV9m2XsPQcg2myzGDk60my2WYwAaDbbLEYAJJutFmOna5LNsfc8gGCz3WI0PsBttluMAoIPjIAFbFiEM0cAaNCMAfbISh0/szMAyErFo340CLRPAZ0ADpguLAAo0LQFHsbqZ/mh/hGP+Qlxcmx8nSnJLwJAizwG+ksf702J9A0+wzfqMBFgekgnSnaQBBDb0RV0pvSlJUOi4uEhwYVgABlQpwuGBhOTm9R0TlSoXkSWU5On5HzR+dTFlCBL2vPhALxpltaJ5arIS0JPbLLSmll5CcNlkbDSmrz0vvD9Myc3zgawi+MLkCeuQP41wM9cc7m/qPv/7zLdX/e6v7B2f+Xu/qMB9589uP9w442EiaU4ln+d8aD2F7aylIYaKXt7AAAAAElFTkSuQmCC"
   },
-  "description": "Mesure d'audience sans cookie, hébergée en France, conçue pour l'exemption de consentement de la CNIL. Une balise « Installation » sur toutes les pages, puis une balise « Événement » par objectif (formulaire, devis, achat…).",
+  "description": "Mesure d'audience sans cookie, hébergée en France, conçue pour l'exemption de consentement de la CNIL. Une balise « Installation » sur toutes les pages, puis une balise « Événement » par objectif (formulaire, devis, achat…). Documentation : https://www.equateur.org/documentation/google-tag-manager/",
   "containerContexts": [
     "WEB"
   ]
@@ -179,20 +179,8 @@ ___TEMPLATE_PARAMETERS___
         "type": "SELECT",
         "selectItems": [
           {
-            "value": "offre",
-            "displayValue": "offre"
-          },
-          {
-            "value": "formule",
-            "displayValue": "formule"
-          },
-          {
             "value": "categorie",
             "displayValue": "categorie"
-          },
-          {
-            "value": "methode",
-            "displayValue": "methode"
           },
           {
             "value": "etape",
@@ -201,6 +189,18 @@ ___TEMPLATE_PARAMETERS___
           {
             "value": "fichier",
             "displayValue": "fichier"
+          },
+          {
+            "value": "formule",
+            "displayValue": "formule"
+          },
+          {
+            "value": "methode",
+            "displayValue": "methode"
+          },
+          {
+            "value": "offre",
+            "displayValue": "offre"
           },
           {
             "value": "vers",
