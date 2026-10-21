@@ -1,0 +1,6 @@
+homepage: "https://www.equateur.org"
+documentation: "https://www.equateur.org/documentation/google-tag-manager/"
+versions:
+  # La version la plus récente en premier. sha : le commit du dépôt public qui contient ce template.tpl.
+  - sha: bcd5eb7cb59ad1032db2415c5f90b16851562f3f
+    changeNotes: "Première version : balise Installation (chargement du script, réglages) et balise Événement (nom, montant, détails)."
